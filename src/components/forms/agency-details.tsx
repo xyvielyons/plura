@@ -52,7 +52,7 @@ const AgencyDetails = ({data}:Props) => {
             name:data?.name,
             companyEmail:data?.companyEmail,
             companyPhone:data?.companyPhone,
-            whiteLabel:data?.whiteLabel,
+            whiteLabel:data?.whiteLabel || false,
             address:data?.address,
             city:data?.city,
             zipCode:data?.zipCode,
