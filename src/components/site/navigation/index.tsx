@@ -9,7 +9,7 @@ interface Props {
 }
 const Navigation = ({user}:Props) => {
   return (
-    <div className='p-4 flex items-center justify-between relative'>
+    <div className='p-4 flex items-center justify-between fixed top-0 right-0 left-0 z-10'>
         <aside className='flex items-center gap-2'>
             <Image src={'./assets/plura-logo.svg'} width={40} height={40} alt='logo' ></Image>
             <span className='text-xl font-bold'>Plura.</span>

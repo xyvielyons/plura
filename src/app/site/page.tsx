@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
       </section>
-      <section className="flex justify-center flex-col gap-4 mt-[-60px] md:!mt-20 items-center">
+      <section className="flex justify-center flex-col gap-4 mt-[-60px] items-center">
         <h2 className="text-4xl text-center">Choose what fits you right</h2>
         <p className="text-muted-foreground text-center">Our straightforward pricing plans are tailored to meet your needs. If {"you're"} not <br/> ready to commit you can get started for free. </p>
         <div className="flex items-center gap-4 flex-wrap mt-6 justify-center">

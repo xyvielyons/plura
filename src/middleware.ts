@@ -8,7 +8,6 @@ export default clerkMiddleware(async (auth, request) => {
   const url = request.nextUrl
   const searchParams = url.searchParams.toString()
   let hostname = request.headers
-  console.log(hostname)
 
   const pathWithSearchParams = `${url.pathname}${searchParams.length > 0 ? `?${searchParams}`:''}`;
 
@@ -32,8 +31,6 @@ export default clerkMiddleware(async (auth, request) => {
   }
 
   
-
-  console.log(searchParams)
   
 })
 
