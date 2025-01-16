@@ -428,3 +428,25 @@ export const deleteSubAccount = async(subaccountId:string)=>{
     return response
 
 }
+
+export const deleteUser = async(userId:string)=>{
+    const clerk = await clerkClient()
+    await clerk.users.updateUserMetadata(userId,{
+        privateMetadata:{
+            role:undefined
+        }
+    })
+    const deletedUser = await db.user.delete({where:{id:userId}})
+
+    return deletedUser
+}
+
+export const getUser = async (id:string) => {
+    const user = await db.user.findUnique({
+        where:{
+            id
+        }
+    })
+
+    return user
+}
