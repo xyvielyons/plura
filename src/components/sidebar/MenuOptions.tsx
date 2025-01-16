@@ -152,7 +152,7 @@ const MenuOptions = ({defaultOpen,subAccounts,sidebarOpt,sidebarLogo,details,use
                             <CommandInput className='outline-none dark:bg-muted p-2 items-center border-b flex rounded-sm' placeholder='Search...'></CommandInput>
                             <CommandList className='pb-16 overflow-visible'>
                                 <CommandEmpty>No Results Found</CommandEmpty>
-                                <CommandGroup className='overflow-visible'>
+                                <CommandGroup className='overflow-visible '>
                                     {sidebarOpt.map((sidebarOptions)=>{
                                         let val
                                         const result = icons.find((icon)=>icon.value === sidebarOptions.icon)
@@ -161,7 +161,7 @@ const MenuOptions = ({defaultOpen,subAccounts,sidebarOpt,sidebarLogo,details,use
                                         }
 
                                         return (
-                                            <CommandItem key={sidebarOptions.id} className='md:w-[320px] w-full'>
+                                            <CommandItem key={sidebarOptions.id} className='md:w-[320px] w-full '>
                                                 <Link href={sidebarOptions.link} className='flex items-center gap-2 hover:bg-transparent rounded-md transition-all md:w-full w-[320px]'>{val}
                                                     <span>{sidebarOptions.name}</span>
                                                 </Link>

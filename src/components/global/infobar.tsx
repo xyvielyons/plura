@@ -8,6 +8,7 @@ import { SheetContent, SheetTrigger,Sheet, SheetHeader, SheetTitle, SheetDescrip
 import { Card } from '../ui/card'
 import { Switch } from '../ui/switch'
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
+import { ModeToggle } from './mode-toggle'
 
 type Props = {
     notifications:NotificationWithUser | []
@@ -40,7 +41,7 @@ const InfoBar = ({notifications,role,className,subAccountId}: Props) => {
                 <UserButton></UserButton>
                 <Sheet>
                     <SheetTrigger>
-                        <div className="rounded-full w-8 h-8 bg-primary flex items-center justify-center text-white"> <Bell size={17}></Bell></div>
+                        <div className="rounded-full w-9 h-9 bg-primary flex items-center justify-center text-white"> <Bell size={17}></Bell></div>
                     </SheetTrigger>
                     <SheetContent className='mt-4 mr-4 pr-4 flex flex-col'>
                         <SheetHeader className='text-left'>
@@ -80,6 +81,7 @@ const InfoBar = ({notifications,role,className,subAccountId}: Props) => {
                         )}
                     </SheetContent>
                 </Sheet>
+                <ModeToggle/>
             </div>
         </div>
     </>
